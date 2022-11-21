@@ -1,9 +1,9 @@
 def is_anagram(first_string, second_string):
-    if first_string == "" or second_string == "":
-        return (first_string, second_string, False)
-
     first_string_text = "".join(bubble_sort(first_string))
     second_string_text = "".join(bubble_sort(second_string))
+
+    if first_string_text == "" or second_string_text == "":
+        return (first_string_text, second_string_text, False)
 
     if first_string_text == second_string_text:
         return (first_string_text, second_string_text, True)
